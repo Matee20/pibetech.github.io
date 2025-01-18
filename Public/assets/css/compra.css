@@ -1,0 +1,183 @@
+/* Variables */
+:root {
+    --main-bg-color: #062683;
+    --container-bg-color: #102955;
+    --button-bg-color: #0074d9; /* Color del botón principal (compra) */
+    --accent-color: rgb(25, 134, 167);
+    --highlight-color: #2ecc71;
+    --text-color: wheat;
+    --font-main: Arial, sans-serif;
+}
+
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--font-main);
+    background-color: var(--main-bg-color);
+    padding: 20px;
+}
+
+.comprar_boton{
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: var(--accent-color); /* Diferente color para diferenciarlo del botón de compra */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.product-page {
+    display: flex;
+    max-width: 1200px;
+    margin: 2em auto;
+    background-color: var(--container-bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative; /* Importante para posicionar el botón relativo al contenedor */
+}
+
+/* Galería del producto */
+.product-gallery {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.product-gallery .main-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Información del producto */
+.product-info {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-info h1, .product-details > h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.price {
+    font-weight: bold;
+    color: var(--button-bg-color);
+    margin-bottom: 10px;
+}
+
+/* Botón de compra */
+.buy-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--button-bg-color); /* Color de fondo */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buy-buttons button:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buy-buttons button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de Volver a la tienda */
+.volver-tienda {
+    
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: var(--accent-color); /* Diferente color para diferenciarlo del botón de compra */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volver-tienda:hover {
+    background-color: var(--button-bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.volver-tienda:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .product-gallery {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .product-info h1, .product-details > h2 {
+        font-size: 20px;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .buy-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buy-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-info h1, .product-details > h2 {
+        font-size: 18px;
+    }
+
+    .product-info, .product-gallery {
+        text-align: center;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}

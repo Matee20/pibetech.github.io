@@ -1,0 +1,157 @@
+* {
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    background-color: #0d2247;
+}
+
+
+section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 50%;
+    background-color: #0d2247;
+}
+
+.consulta {
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    width: 70%;
+    background-color: #0d2247;
+}
+
+.consulta .title p {
+    line-height: 1px;
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.consulta .text {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 60%;
+    color: #E0A1A1;
+}
+
+.consulta .text h1 {
+    font-size: 35px;
+
+}
+
+.consulta .text p {
+    color: #F2E1E1;
+    font-size: 15px;
+}
+
+.contenido {
+    overflow: hidden;
+    width: 260px;
+}
+
+.contenido p {
+    margin-top: 35px;
+    line-height: 2px;
+    color: #F2E1E1;
+    font-size: 14px;
+}
+
+.div_form form {
+    margin: 29px;
+    padding: 35px;
+    padding-top: 10px;
+    background-color: #1a335f;
+    border-radius: 2px;
+}
+
+.div_form .title {
+    color: #f5eded;
+    line-height: 2px;
+
+}
+
+.div_Nombre input {
+    height: 18px;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    color: #3f3f3f;
+}
+
+.div_Correo input {
+    height: 18px;
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    color: #3f3f3f;
+
+}
+
+.div_Mensaje textarea {
+    width: 100%;
+    background-color: #fffafa;
+    font-size: 100%;
+    height: 90px;
+    border: none;
+    font-size: 13px;
+    color: #3f3f3f;
+}
+
+.div_Mensaje {
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
+
+}
+
+.div_Nombre {
+    width: 100%;
+    margin: 0;
+    border: none;
+
+}
+
+.div_Correo {
+    width: 100%;
+    margin: 0;
+    border: none;
+
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.div_Button {
+    width: 100%;
+    margin: 0;
+    border: none;
+
+}
+
+.div_form form button {
+    border: none;
+    width: 100%;
+    background-color: #E0A1A1;
+    color: #851212;
+    padding: 7px;
+    font-weight: 800;
+    margin-top: 20px;
+    cursor: pointer;
+}
+

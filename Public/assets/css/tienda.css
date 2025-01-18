@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    background-color: #0d2247;
+    color: #1a1a1a;
+}
+
+.container {
+    width: 100%;
+    max-width: 80em;
+    margin: 3em auto 2em auto;
+    padding: 20px;
+    background-color: #102955;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Primera sección (imágenes superior) */
+.top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "uno dos cua"
+        "uno tre sin";
+    gap: 10px;
+    background-color: #102955;
+    padding: 10px;
+    height: 300px;
+}
+
+
+.grid-itemm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-itemm:hover {
+    transform: scale(1.05);
+}
+
+.grid-itemm .button-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.grid-itemm button {
+    padding: 12px 24px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-itemm button:hover {
+    background-color: #0056b3;
+}
+
+.uno {
+    grid-area: uno;
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202009/2502/rB3GRFvdPmaALiGt89ysflQ4.jpg');
+    grid-row: span 2;
+}
+
+.dos {
+    grid-area: dos;
+    background-image: url('https://www.hogwartslegacy.com/images/share.jpg');
+}
+
+.tre {
+    grid-area: tre;
+    background-image: url('https://i.blogs.es/04f504/120718-fh4-tlqns/1366_2000.jpg');
+}
+
+.cua {
+    grid-area: cua;
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/bxSj4jO0KBqUgAbH3zuNjCje.jpg');
+}
+
+.sin {
+    grid-area: sin;
+    background-image: url('https://i.ytimg.com/vi/E3Huy2cdih0/maxresdefault.jpg');
+}
+
+/* --------------------------------Segunda sección (círculos)------------------------- */
+.circle-section {
+    display: flex;
+    justify-content: center;
+    gap: 11em;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #0d2041;
+    border-radius: 10px;
+}
+
+.circle {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle img {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------tercera sección (carrusel)------------------------- */
+
+.carousel-container {
+    height: 40em;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateX(20px);
+    position: absolute;
+    /* Coloca cada slide en la misma posición */
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+    /* Para que el active aparezca sobre las otras */
+}
+
+.slide>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #b3d1ff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #0056b3;
+}
+
+
+/* -----------------cuarta sección (rectángulos grandes)--------------------- */
+
+.rectangles-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 8em;
+    /* Agrega un margen entre los elementos */
+    background-color: #0d2041;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 4em 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.rectangles-section.hidden {
+    opacity: 0;
+}
+
+.rectangles-section>a {
+    text-decoration: none;
+}
+
+.rectangle {
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 12em;
+    height: 15em;
+    border-radius: 10px;
+    box-shadow: -20px 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangle>h2 {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.rectangle>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.rectangle:hover {
+    transform: translateY(-10px);
+}
+
+/* -----------------------------quinta sección (rejilla inferior)----------------------------- */
+.grid-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0d2041;
+    border-radius: 10px;
+}
+
+.small-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas por defecto */
+    gap: 20px;
+    width: 100%;
+    /* Asegura que ocupe el ancho disponible */
+    max-width: 1200px;
+    /* Define un máximo para pantallas grandes */
+}
+
+.grid-item {
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.zona_perifericos {
+    text-align: center;
+    color: wheat;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.imagen {
+    width: 4em;
+    height: 4em;
+    background-color: #0056b3;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* -------------------------------------seecion busqueda---------------------------------- */
+.busqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../Images/homepage/fondo_bannr.gif);
+}
+
+
+.busqueda .ttle_search {
+    font-weight: 800;
+    font-size: 5vh;
+    color: #ffffffac;
+    height: 10px;
+}
+
+.seccion-busqueda {
+    display: flex;
+    width: 92%;
+    height: fit-content;
+    margin: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+ background-color: #033264;
+   
+}
+
+.filtros {
+    flex: 1 1 200px;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.filtros h3 {
+    color: #000000;
+    margin-top: 5px;
+    font-weight: bold;
+    height: 10px;
+}
+
+.filtro-precio,
+.filtro-categoria,
+.filtro-genero {
+    margin-bottom: 20px;
+}
+
+.filtro-precio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtro-precio label {
+    flex: 0 0 auto;
+}
+
+.filtro-precio input,
+.buscador {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #0d2041;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.filtro-categoria label,
+.filtro-genero label {
+    display: block;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.filtro-categoria input,
+.filtro-genero input {
+    margin-right: 8px;
+}
+
+.contenido-busqueda {
+    flex: 3 1 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buscador-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #0d2041;
+    border: 1px solid #b3000000;
+    border-radius: 50px;
+    padding: 5px;
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buscador {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #ffa4a4;
+    background: transparent;
+    outline: none;
+}
+
+.icono-busqueda {
+    background: none;
+    border: none;
+    color: #ff8d8d;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.icono-busqueda:hover {
+    background-color: #ff58583f;
+}
+
+/* -------------------------------------responsive---------------------------------- */
+
+@media (max-width: 768px) {
+    .top-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tre"
+            "cua"
+            "sin";
+        height: auto;
+    }
+
+    .grid-item {
+        height: 200px;
+    }
+
+    .circle-section {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-container {
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .rectangles-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rectangle {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .small-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .small-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}

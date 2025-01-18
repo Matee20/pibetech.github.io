@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+header>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.logo>nav>ul {
+    margin: 0;
+    padding: 0;
+    font-size: 3vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.logo>nav>ul>a {
+    margin-top: 2vh;
+    text-decoration: none;
+    padding: 2vh;
+    color: black;
+}
+
+.texto {
+    transform: translateY(-10vh);
+    font-size: 5vh;
+    margin: 5vh;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.LogoMain {
+    margin-top: -7vh;
+    width: 35vh;
+    margin-left: 7vh;
+}
+
+.botones_de_registro {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 10vh;
+}
+
+.botones_de_registro a button {
+    border: none;
+    border-radius: 15vh;
+    width: 15vh;
+    height: 5vh;
+    transition: transform 0.4s ease;
+    margin: 0.5vh;
+}
+
+.botones_de_registro a button:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 10vh;
+}
+
+.cajita_logo {
+    background-color: #9f0f0f;
+}
+
+.menu img {
+    width: 12vh;
+    height: 12vh;
+    margin: 5vh;
+}
+
+.fotomenu {
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    margin-left: 2vh;
+    margin-top: 1vh;
+    transition: transform 0.7s ease;
+}
+
+.fotomenu:hover {
+    transform: scale(1.1);
+}
+
+.carrito {
+    position: absolute;
+    border-radius: 12vh;
+    width: 5vh;
+    height: 5vh;
+    right: 36vh;
+    top: 0.7vh;
+}
+
+
+/*-----------------------------------------------Pie de pagina--------------------------------------------------------------*/
+footer {
+    margin-bottom: 0;
+    background-color: #9f0f0f;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-container div h3,
+p {
+    color: rgb(255, 255, 255);
+
+}
+
+.footer-section {
+    color: rgb(255, 255, 255);
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.footer-section h3,
+p {
+    color: rgb(255, 255, 255);
+
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .socials a {
+    margin: 0 5px;
+}
+
+.footer-section .socials img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
+.maps {
+    text-align: center;
+}

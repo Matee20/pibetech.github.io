@@ -1,0 +1,117 @@
+
+body {
+  background: #0f2d63;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #228be6;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+#red {
+  color: red;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 50%;
+  height: 100%;
+  background: url('https://m.media-amazon.com/images/I/81laYJTBhLL.jpg') center/cover no-repeat;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+.form-container input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #1a335f;
+  background: #1a335f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.back-button {
+  position: absolute;
+  top: 4em;
+  left: 8em;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}

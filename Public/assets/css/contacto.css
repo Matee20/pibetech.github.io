@@ -1,0 +1,151 @@
+body {
+  
+    margin: 0;
+    padding: 0;
+    background:  #0d2247;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    width: 55%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    position: relative; 
+    box-sizing: border-box; 
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form form label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form form label i {
+    margin-right: 5px;
+    color: #999;
+}
+
+.contact-form form button {
+    width: 100%;
+    padding: 10px;
+    background: #0d31e1;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-bottom: 70px;
+}
+
+.contact-form form button:hover {
+    background: #1505f5;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.phone-group {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    background: #0c2248;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info .info p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contact-info .info p i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti--allow-dropdown input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ff0b0b;
+    margin-bottom: 15px;
+}
+
+
+.back-button {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d31e1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0011ff;
+}

@@ -1,0 +1,347 @@
+@media (max-width: 750px) {
+
+    /* -------------------------------------------------------PAGINA PRINCIPAL-------------------------------------------------------------- */
+    /* Estilos generales */
+    body,
+    main {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: #0d2247;
+    }
+
+    /* Sección 1 */
+    .seccion1,
+    .sec1-video,
+    .sec1-video video,
+    .seccion2,
+    .seccion-2-5,
+    .seccion3 {
+        width: 100%;
+        height: 100%;
+        background-color: #0d2247;
+    }
+
+    .sec1-video video {
+        width: 100%;
+    }
+
+    /* Sección 2 */
+    .contenedor-juegitos {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        overflow: scroll;
+    }
+
+    .juegitos {
+        width: 20em;
+        height: 10em;
+    }
+
+    .juegitos>a>img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .juegitos h4,
+    .juegitos p {
+        margin: 0;
+    }
+
+    /* Sección 2.5 */
+    .div-seccion2-5 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1vh;
+    }
+
+    .div-seccion2-5>div {
+        width: 88%;
+        height: 50%;
+    }
+
+    .div-seccion2-5 h2 {
+        color: white;
+    }
+
+    .div-seccion2-5 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2vh;
+        margin: 2vh auto;
+    }
+
+    /* Sección 3 */
+    .seccion3 h1 {
+        color: wheat;
+        position: relative;
+        top: 0vh;
+    }
+
+    .contenedor {
+        margin-top: 100em;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #0d2247;
+    }
+
+    .contenedor button {
+        margin: auto;
+    }
+
+    .cajas {
+        background: #555;
+    }
+
+    .caja_grande {
+        margin: -97em 1em 1em;
+        background-color: #0d2753;
+        width: 90%;
+        height: 70%;
+    }
+
+    .caja_grande img,
+    .cajas_chicas img {
+        width: 100%;
+    }
+
+    .caja_grande img {
+        height: 30em;
+    }
+
+    .caja_grande button,
+    .cajas_chicas button {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        font-weight: 800;
+        padding: 0.5em 1em;
+        border: none;
+        outline: none;
+        color: white;
+    }
+
+    .caja_grande button {
+        background-color: #30A7F1;
+    }
+
+    .cajas_chicas {
+        background-color: #0d2753;
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+
+    .cajas_chicas img {
+        height: 20em;
+    }
+
+    .cajas_chicas button {
+        background-color: #0d2247;
+    }
+}
+
+/* -------------------------------------------------------PAGINA CONTACTO-------------------------------------------------------------- */
+
+@media (max-width: 750px) {
+    .contact-info {
+        display: none;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+
+
+/* -------------------------------------------------------PAGINA HEADER---------------------------------------------------------------- */
+@media (max-width: 750px) {
+   
+    .LogoMain {
+        width: 20em;
+        left: 2em;
+    }
+
+    .contenedor_general>nav>ul {
+        display: none;
+
+    }
+
+    /* Icono de hamburguesa */
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        cursor: pointer;
+        margin-right: 1em;
+    }
+
+    /* Estilo de las barras del icono de hamburguesa */
+    .hamburger-icon span {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    .register-button {
+        border-radius: 2em;
+        border: none;
+        color: #000;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+        min-width: 30px;
+        text-align: center;
+        height: 2.7vh;
+    }
+
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a335f;
+        text-align: center;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-list.menu-active {
+        display: flex;
+    }
+
+    /* Estilos de los elementos del menú */
+    .menu-list li {
+        padding: 1em 0;
+    }
+
+    .menu-list li a {
+        color: white;
+        font-size: 1.2em;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------PAGINA CONSULTA---------------------------------------------------------------- */
+@media (max-width:676px) {
+    .consulta {
+        width: 90%;
+    }
+
+
+    .consulta {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .consulta .text {
+
+        height: 500px;
+        width: 80%;
+
+    }
+
+}
+
+@media (min-width:1920px) {
+    .consulta {
+        width: 56%;
+    }
+
+    .consulta .title p {
+        font-size: 26px;
+        line-height: 26px;
+
+    }
+
+    .consulta .text {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .consulta .text h1 {
+        font-size: 50px;
+
+    }
+
+    .consulta .text p {
+        color: #F2E1E1;
+        font-size: 25px;
+    }
+
+    .contenido {
+        overflow: hidden;
+        width: 360px;
+    }
+
+    .contenido p {
+        margin-top: 35px;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    .div_form form {
+        margin: 29px;
+        padding: 55px;
+        padding-top: 20px;
+
+    }
+
+    .div_form .title {
+        color: #f5eded;
+        line-height: 2px;
+
+    }
+
+
+    .div_Nombre input {
+        height: 35px;
+        font-size: 20px;
+
+    }
+
+    .div_Correo input {
+        height: 35px;
+        font-size: 20px;
+
+    }
+
+    .div_Mensaje textarea {
+        height: 200px;
+        font-size: 20px;
+
+    }
+
+
+    .div_Button {
+        width: 100%;
+        margin: 0;
+        border: none;
+
+    }
+
+    .div_form form button {
+
+        margin-top: 30px;
+        font-size: 22px;
+    }
+
+}

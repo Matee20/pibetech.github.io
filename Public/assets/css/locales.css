@@ -1,0 +1,33 @@
+body{
+    background-color: #1a335f;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.contenedor_principal{
+    width: 100%;
+    height: 35em;
+    background-color: #0d2247;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor_grande{
+    display: flex;
+    width: 90%;
+}
+
+.conteiner{
+
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    background-color: #121212;
+}
+
+.conteiner > iframe{
+    width: 100%;
+    height: 100%;
+}

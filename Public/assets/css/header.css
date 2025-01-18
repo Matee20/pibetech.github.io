@@ -1,0 +1,119 @@
+
+.contenedor_general {
+    background-color: #0d2247;
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Alinea todo el contenido dentro del nav */
+    align-items: center;
+    /* Alinea verticalmente el logo, el ícono de hamburguesa y los botones */
+}
+
+/* Logo */
+.logoMain-conteiner {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.LogoMain {
+    width: 100%;
+}
+
+/* Ícono de hamburguesa */
+.hamburger-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    left: -1em;
+}
+
+/* Estilo de las barras del ícono de hamburguesa */
+.hamburger-icon span {
+    width: 32px;
+    height: 5px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+/* Menú desplegable */
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: #1a335f;
+    padding: 1em;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mostrar el menú cuando está activo */
+.menu-list.menu-active {
+    display: flex;
+}
+
+/* Enlaces del menú */
+.menu-list a {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Botones de login y registro */
+.botones_de_registro {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    margin-left: auto;
+    right: 2em;
+}
+
+/* Estilos de los botones */
+.register-button {
+    border-radius: 2em;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    min-width: 70px;
+    text-align: center;
+    height: 4.7vh;
+}
+
+.carrito-logo{
+    border-radius: 2em;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    text-align: center;
+    width: 3em;
+    height: 3em;
+}
+
+.image-logo{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.botones_de_registro button:hover {
+    transform: scale(1.1);
+}

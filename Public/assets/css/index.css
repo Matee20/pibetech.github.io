@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e3e6f0);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: #4b79a1;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Contenido Principal */
+.main-content {
+    background-image: url("https://live.staticflickr.com/65535/48717615562_8198a2ee42_o.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Resta espacio para header y footer */
+}
+
+/* Caja de redirección */
+.redireccion {
+    text-align: center;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.redireccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: #4b79a1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background: #3a6283;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2d4059;
+    color: #fff;
+    font-size: 0.9rem;
+}
